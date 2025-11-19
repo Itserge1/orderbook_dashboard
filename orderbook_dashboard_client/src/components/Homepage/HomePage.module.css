@@ -1,10 +1,21 @@
 .homepage {
-    background: #0d1117;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #f0f6fc;
     font-family: "Courier New", monospace;
     /*border-radius: 12px;*/
-    /*display: flex;*/
     /*!*flex-direction: column;*!*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+}
+
+.homepage__wrapper{
+    background: #0d1117;
+    width: 90%;
+    height: 90%;
+}
+
+.homepage__content{
+    padding: 1rem 3rem;
 }

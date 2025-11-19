@@ -31,29 +31,33 @@ const HomePage = () => {
 
     return (
         <section className={styles.homepage}>
-            <div>
-                <CSVUpload
-                    onHistoricalLoaded={(data) => setHistoricalOrderBookList(data.reverse())}
-                    onLatestLoaded={(data) => setOrderBookList(data)}
-                />
-            </div>
+            <div className={styles["homepage__wrapper"]}>
+                <div className={styles["homepage__content"]}>
+                    <div>
+                        <CSVUpload
+                            onHistoricalLoaded={(data) => setHistoricalOrderBookList(data.reverse())}
+                            onLatestLoaded={(data) => setOrderBookList(data)}
+                        />
+                    </div>
 
-            <div>
-                <h2>Historical OrderBook Data</h2>
-                {historicalOrderBookList.length > 0 ? (
-                    <HistoricalOrderBookChart data={historicalOrderBookList} setData={setHistoricalOrderBookList} />
-                ) : (
-                    <p>Upload a CSV to view historical data</p>
-                )}
-            </div>
+                    <div>
+                        <h2>Historical OrderBook Data</h2>
+                        {historicalOrderBookList.length > 0 ? (
+                            <HistoricalOrderBookChart data={historicalOrderBookList} setData={setHistoricalOrderBookList} />
+                        ) : (
+                            <p>Upload a CSV to view historical data</p>
+                        )}
+                    </div>
 
-            <div>
-                <h2>Latest OrderBook</h2>
-                {orderBookList.length > 0 ? (
-                    <OrderBookChart data={orderBookList} />
-                ) : (
-                    <p>Loading...</p>
-                )}
+                    <div>
+                        <h2>Latest OrderBook</h2>
+                        {orderBookList.length > 0 ? (
+                            <OrderBookChart data={orderBookList} />
+                        ) : (
+                            <p>Upload a CSV to view Orderbook data...</p>
+                        )}
+                    </div>
+                </div>
             </div>
         </section>
     );
