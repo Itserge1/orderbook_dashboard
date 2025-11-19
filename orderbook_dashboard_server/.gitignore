@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+.venv/
+fastapi_app/.DS_Store
+orderbook.db
