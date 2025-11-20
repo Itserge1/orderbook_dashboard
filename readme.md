@@ -1,7 +1,10 @@
 # Overview
 
+* [Overview](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#overview)
+  * [Prerequisites](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#prerequisites)
+* [Summary](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#summary)
+* [My Design Approach & Thought Process](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#my-design-approach--thought-process-read-if-you-want-to-see-how-i-tackled-the-challenge)
 * [How to Run the Application?](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#how-to-run-the-application)
-    * [Prerequisites](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#prerequisites)
 * [Start the Backend Server](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#start-the-backend-server)
     * [Step 1: Create a Virtual Environment](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-1-create-a-virtual-environment)
         * [macOS / Linux](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#macos--linux)
