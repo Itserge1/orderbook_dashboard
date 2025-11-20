@@ -14,6 +14,13 @@
       `.env` File](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-2-create-a-env-file)
     * [Step 3: Run the Application](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-3-run-the-application)
 
+## **Prerequisites**
+
+* Python **3.8 or higher**
+* Node.js **18+**
+* pip (latest recommended)
+* VS Code (or any IDE that can run python and JavaScript)
+
 # Summary
 
 This project is a **dashboard application** designed to visualize order book data for stocks. It allows users to upload
@@ -108,12 +115,6 @@ Start by cloning the repository:
 git clone https://github.com/Itserge1/orderbook_dashboard.git
 ```
 
-## **Prerequisites**
-
-* Python **3.8 or higher**
-* Node.js **18+**
-* pip (latest recommended)
-
 # **Start the Backend Server**
 
 Navigate to the backend directory:
@@ -201,7 +202,7 @@ Run:
 ```shell
 uvicorn main:app --reload --port 5001
 ```
-
+This should start the FastAPI server and create a SQLite database call `orderbook.db`.
 The app will be available at:
 
 ```
