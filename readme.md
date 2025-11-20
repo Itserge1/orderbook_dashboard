@@ -32,7 +32,7 @@ scroll through historical data seamlessly.
 My main challenge while building this project was handling **large datasets efficiently** and deciding how best to process
 and display them. I chose a combination of **pagination** and a **sliding-window approach**. Pagination allows the
 backend to send only a fixed number of rows at a time, while the sliding window ensures the client only displays the
-current visible range of data—keeping performance smooth and consistent.
+current visible range of data-keeping performance smooth and consistent.
 
 Initially, I considered parsing the CSV directly on the client using [PapaParse](https://www.papaparse.com/) and rendering the chart entirely on the
 frontend with no backend involved. However, this approach quickly showed limitations:
@@ -60,7 +60,7 @@ Here’s how the sliding-window plus pagination workflow works:
 * At the same time, the client removes the oldest 100 rows from the local buffer to keep a consistent **300-row sliding
   window**.
 * This design allows smooth navigation through very large datasets while keeping memory usage stable. The only heavy
-  operation is the initial CSV-to-database import, which can be optimized further in a production environment.
+  operation is the initial CSV to database import, which can be optimized further in a production environment.
 
 ## **Potential Production Enhancements**
 
