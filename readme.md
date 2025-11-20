@@ -1,5 +1,21 @@
 # Overview
+* [How to Run the Application?](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#how-to-run-the-application)
+    * [Prerequisites](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#prerequisites)
+* [Start the Backend Server](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#start-the-backend-server)
+    * [Step 1: Create a Virtual Environment](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-1-create-a-virtual-environment)
+      * [macOS / Linux](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#macos--linux)
+      * [Windows (PowerShell)](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#windows-powershell)
+    * [Step 2: Obtain a CSV File](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-2-obtain-a-csv-file)
+    * [Step 3: Run the Backend Server](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-3-run-the-backend-server)
+* [Start the Client Application](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#start-the-client-application)
+  * [Step 1: Install Dependencies](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-1-install-dependencies)
+  * [Step 2: Create a `.env` File](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-2-create-a-env-file)
+  * [Step 3: Run the Application](https://github.com/Itserge1/orderbook_dashboard?tab=readme-ov-file#step-3-run-the-application)
 
+
+
+
+# Summary
 This project is a **dashboard application** designed to visualize order book data for stocks. It allows users to upload
 CSV files containing detailed bid and the ask volumes, timestamps, and prices. The
 dashboard then displays this data in interactive charts, giving a clear, view of market depth and liquidity.
@@ -11,7 +27,7 @@ On the frontend, a **React/Next.js** application renders the charts using Rechar
 charts for bid and ask volumes. Tooltips show detailed information with timestamps down to milliseconds, while users can
 scroll through historical data seamlessly.
 
-# **How to Run the Application**
+# **How to Run the Application?**
 
 Start by cloning the repository:
 
@@ -118,6 +134,11 @@ Run:
 uvicorn main:app --reload --port 5001
 ```
 
+The app will be available at:
+
+```
+http://localhost:5001
+```
 ---
 
 # **Start the Client Application**
